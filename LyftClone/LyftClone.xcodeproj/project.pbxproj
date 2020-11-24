@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F7930D94256CD66900908C0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7930D93256CD66900908C0E /* AppDelegate.swift */; };
+		F7930D96256CD66900908C0E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7930D95256CD66900908C0E /* SceneDelegate.swift */; };
+		F7930D9B256CD66900908C0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7930D99256CD66900908C0E /* Main.storyboard */; };
+		F7930D9D256CD66C00908C0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7930D9C256CD66C00908C0E /* Assets.xcassets */; };
+		F7930DA0256CD66C00908C0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7930D9E256CD66C00908C0E /* LaunchScreen.storyboard */; };
+		F7930DAE256CD6F900908C0E /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7930DAD256CD6F900908C0E /* Location.swift */; };
+		F7930DB2256CD7BC00908C0E /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7930DB1256CD7BC00908C0E /* LocationService.swift */; };
+		F7930DB5256CD90600908C0E /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = F7930DB4256CD90600908C0E /* locations.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F7930D90256CD66900908C0E /* LyftClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LyftClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7930D93256CD66900908C0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F7930D95256CD66900908C0E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F7930D9A256CD66900908C0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F7930D9C256CD66C00908C0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F7930D9F256CD66C00908C0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F7930DA1256CD66C00908C0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7930DAD256CD6F900908C0E /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		F7930DB1256CD7BC00908C0E /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		F7930DB4256CD90600908C0E /* locations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = locations.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F7930D8D256CD66900908C0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F7930D87256CD66900908C0E = {
+			isa = PBXGroup;
+			children = (
+				F7930D92256CD66900908C0E /* LyftClone */,
+				F7930D91256CD66900908C0E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F7930D91256CD66900908C0E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7930D90256CD66900908C0E /* LyftClone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7930D92256CD66900908C0E /* LyftClone */ = {
+			isa = PBXGroup;
+			children = (
+				F7930DAB256CD68F00908C0E /* Supporting Files */,
+				F7930DAA256CD68600908C0E /* Controller */,
+				F7930DA9256CD68000908C0E /* View */,
+				F7930DA8256CD67900908C0E /* Model */,
+				F7930D9C256CD66C00908C0E /* Assets.xcassets */,
+				F7930D9E256CD66C00908C0E /* LaunchScreen.storyboard */,
+				F7930DA1256CD66C00908C0E /* Info.plist */,
+			);
+			path = LyftClone;
+			sourceTree = "<group>";
+		};
+		F7930DA8256CD67900908C0E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F7930DB0256CD79600908C0E /* Services */,
+				F7930DAD256CD6F900908C0E /* Location.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F7930DA9256CD68000908C0E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F7930D99256CD66900908C0E /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F7930DAA256CD68600908C0E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F7930DAB256CD68F00908C0E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F7930D93256CD66900908C0E /* AppDelegate.swift */,
+				F7930D95256CD66900908C0E /* SceneDelegate.swift */,
+				F7930DB4256CD90600908C0E /* locations.json */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F7930DB0256CD79600908C0E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F7930DB1256CD7BC00908C0E /* LocationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F7930D8F256CD66900908C0E /* LyftClone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7930DA4256CD66C00908C0E /* Build configuration list for PBXNativeTarget "LyftClone" */;
+			buildPhases = (
+				F7930D8C256CD66900908C0E /* Sources */,
+				F7930D8D256CD66900908C0E /* Frameworks */,
+				F7930D8E256CD66900908C0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LyftClone;
+			productName = LyftClone;
+			productReference = F7930D90256CD66900908C0E /* LyftClone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F7930D88256CD66900908C0E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					F7930D8F256CD66900908C0E = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = F7930D8B256CD66900908C0E /* Build configuration list for PBXProject "LyftClone" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F7930D87256CD66900908C0E;
+			productRefGroup = F7930D91256CD66900908C0E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7930D8F256CD66900908C0E /* LyftClone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F7930D8E256CD66900908C0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7930DA0256CD66C00908C0E /* LaunchScreen.storyboard in Resources */,
+				F7930D9D256CD66C00908C0E /* Assets.xcassets in Resources */,
+				F7930DB5256CD90600908C0E /* locations.json in Resources */,
+				F7930D9B256CD66900908C0E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7930D8C256CD66900908C0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7930D94256CD66900908C0E /* AppDelegate.swift in Sources */,
+				F7930DAE256CD6F900908C0E /* Location.swift in Sources */,
+				F7930DB2256CD7BC00908C0E /* LocationService.swift in Sources */,
+				F7930D96256CD66900908C0E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F7930D99256CD66900908C0E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7930D9A256CD66900908C0E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F7930D9E256CD66C00908C0E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7930D9F256CD66C00908C0E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F7930DA2256CD66C00908C0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F7930DA3256CD66C00908C0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F7930DA5256CD66C00908C0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LyftClone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.william.LyftClone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F7930DA6256CD66C00908C0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LyftClone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.william.LyftClone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F7930D8B256CD66900908C0E /* Build configuration list for PBXProject "LyftClone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7930DA2256CD66C00908C0E /* Debug */,
+				F7930DA3256CD66C00908C0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7930DA4256CD66C00908C0E /* Build configuration list for PBXNativeTarget "LyftClone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7930DA5256CD66C00908C0E /* Debug */,
+				F7930DA6256CD66C00908C0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F7930D88256CD66900908C0E /* Project object */;
+}
