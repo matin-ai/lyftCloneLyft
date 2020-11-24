@@ -15,6 +15,8 @@
 		F7930DAE256CD6F900908C0E /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7930DAD256CD6F900908C0E /* Location.swift */; };
 		F7930DB2256CD7BC00908C0E /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7930DB1256CD7BC00908C0E /* LocationService.swift */; };
 		F7930DB5256CD90600908C0E /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = F7930DB4256CD90600908C0E /* locations.json */; };
+		F7930DB8256D86B600908C0E /* RideQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7930DB7256D86B600908C0E /* RideQuote.swift */; };
+		F7930DBB256D876800908C0E /* RideQuoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7930DBA256D876800908C0E /* RideQuoteService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		F7930DAD256CD6F900908C0E /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		F7930DB1256CD7BC00908C0E /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		F7930DB4256CD90600908C0E /* locations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = locations.json; sourceTree = "<group>"; };
+		F7930DB7256D86B600908C0E /* RideQuote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideQuote.swift; sourceTree = "<group>"; };
+		F7930DBA256D876800908C0E /* RideQuoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideQuoteService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,7 @@
 			children = (
 				F7930DB0256CD79600908C0E /* Services */,
 				F7930DAD256CD6F900908C0E /* Location.swift */,
+				F7930DB7256D86B600908C0E /* RideQuote.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -109,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				F7930DB1256CD7BC00908C0E /* LocationService.swift */,
+				F7930DBA256D876800908C0E /* RideQuoteService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -184,9 +190,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7930DBB256D876800908C0E /* RideQuoteService.swift in Sources */,
 				F7930D94256CD66900908C0E /* AppDelegate.swift in Sources */,
 				F7930DAE256CD6F900908C0E /* Location.swift in Sources */,
 				F7930DB2256CD7BC00908C0E /* LocationService.swift in Sources */,
+				F7930DB8256D86B600908C0E /* RideQuote.swift in Sources */,
 				F7930D96256CD66900908C0E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
